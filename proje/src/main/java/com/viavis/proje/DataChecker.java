@@ -120,7 +120,7 @@ public class DataChecker {
         }
 
       }
-      System.out.println(newArray);
+      System.out.println(array);
       return array.toString();
     }
   }
