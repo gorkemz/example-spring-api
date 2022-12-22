@@ -59,8 +59,8 @@ public class DataChecker {
         return "Error: Invalid groupBy parameter";
       }
 
-      ZonedDateTime start = Instant.ofEpochMilli(Long.valueOf(startTimestamp) * 1000).atZone(ZoneId.of("UTC"));
-      ZonedDateTime end = Instant.ofEpochMilli(Long.valueOf(finishTimestamp) * 1000).atZone(ZoneId.of("UTC"));
+      ZonedDateTime start = Instant.ofEpochMilli(Long.valueOf(startTimestamp) * 1000).atZone(ZoneId.of("GMT+03:00"));
+      ZonedDateTime end = Instant.ofEpochMilli(Long.valueOf(finishTimestamp) * 1000).atZone(ZoneId.of("GMT+03:00"));
       List < ZonedDateTime > dates = new ArrayList < > ();
       while (!start.isAfter(end)) {
         dates.add(start);
