@@ -51,7 +51,7 @@ const server = http.createServer((req, res) => {
 			res.write(`${response.toString('utf-8')}`);
       res.write("<br>");
 		});
-	}, 5000);
+	}, 60000);
 
 });
 
